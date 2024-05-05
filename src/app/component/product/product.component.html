@@ -3,6 +3,34 @@
         <h1>Angular - Datatable</h1>
     </mat-card-header>
     <mat-card-content>
+
+        <table datatable [dtOptions]="dtoptions" [dtTrigger]="dttrigger">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>price</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(item of productlist;track item){
+                   <tr>
+                    <td>{{item.code}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.category}}</td>
+                    <td>{{item.status}}</td>
+                    <td>
+                        <button mat-raised-button color="primary">Edit</button>
+                        <button mat-raised-button color="accent">Delete</button>
+                    </td>
+                   </tr>
+                }
+            </tbody>
+        </table>
         
     </mat-card-content>
 </mat-card>

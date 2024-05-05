@@ -48,6 +48,41 @@
             "price": 240,
             "category": "sports",
             "status": true
+        },
+        {
+            "code": "202408",
+            "name": "Sticks",
+            "price": 240,
+            "category": "sports",
+            "status": true
+        },
+        {
+            "code": "202409",
+            "name": "Sticks",
+            "price": 240,
+            "category": "sports",
+            "status": true
+        },
+        {
+            "code": "202410",
+            "name": "Sticks",
+            "price": 240,
+            "category": "sports",
+            "status": true
+        },
+        {
+            "code": "202411",
+            "name": "Sticks",
+            "price": 240,
+            "category": "sports",
+            "status": true
+        },
+        {
+            "code": "202412",
+            "name": "Sticks",
+            "price": 240,
+            "category": "sports",
+            "status": true
         }
     ]
 }
