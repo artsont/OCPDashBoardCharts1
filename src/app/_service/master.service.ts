@@ -12,4 +12,7 @@ export class MasterService {
   Loadproducts(){
     return this.http.get<products[]>("http://localhost:3000/products");
   }
+  Getchartinfo(){
+    return this.http.get("http://localhost:3000/sales");
+  }
 }
