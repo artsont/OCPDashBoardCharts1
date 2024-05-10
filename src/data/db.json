@@ -120,6 +120,11 @@
           "year": 2021,
           "amount": 17000,
           "colorcode": "pink"
+        },
+        {
+          "year": 2022,
+          "amount": 21000,
+          "colorcode": "pink"
         }
       ]
 }
