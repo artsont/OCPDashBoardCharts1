@@ -1,20 +1,29 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { products } from '../_model/products';
-import { salesdata } from '../_model/salesdata';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MasterService {
 
-  constructor(private http:HttpClient) { }
+  private baseUrl = 'https://9gy1l.wiremockapi.cloud';  
 
-  Loadproducts(){
-    return this.http.get<products[]>("http://localhost:3000/products");
+  constructor(private http: HttpClient) { }
+
+  getLineChartData(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/LineData`); 
   }
 
-  loadsalesdata(){
-    return this.http.get<salesdata[]>("http://localhost:3000/sales")
+  getVerticalBarChartData(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/verticalBarData`); 
   }
+
+  getHorizontalBarChartData(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/horizontalBarData`); 
+  }
+
+  getDonutChartData(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/donutChartData`);  
+}
 }

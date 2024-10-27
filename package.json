@@ -22,7 +22,7 @@
     "@angular/router": "^17.3.0",
     "angular-datatables": "^17.1.0",
     "bootstrap": "^5.3.3",
-    "chart.js": "^4.4.2",
+    "chart.js": "^4.4.5",
     "datatables.net": "^2.0.3",
     "datatables.net-dt": "^2.0.3",
     "jquery": "^3.6.0",

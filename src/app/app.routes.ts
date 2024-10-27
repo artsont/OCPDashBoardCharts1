@@ -1,12 +1,6 @@
 import { Routes } from '@angular/router';
-import { ProductComponent } from './component/product/product.component';
-import { MychartComponent } from './component/mychart/mychart.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
-    {
-        path:'product',component:ProductComponent
-    },
-    {
-        path:'chart',component:MychartComponent
-    }
+  { path: '', component: AppComponent }  // Root route to load the AppComponent
 ];

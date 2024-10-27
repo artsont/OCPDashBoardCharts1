@@ -1,0 +1,37 @@
+.dashboard-container {
+  background-color: #2F3849;
+  padding: 40px;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chart-box {
+  background-color: #39475a;
+  padding: 20px;
+  border-radius: 16px;
+  width: 48%; /* Increased width to avoid compression */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: 450px;  /* Increased height for better visualization */
+}
+
+h2 {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+canvas {
+  width: 100% !important;
+  height: 400px !important; /* Increased chart height */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #2F3849;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
